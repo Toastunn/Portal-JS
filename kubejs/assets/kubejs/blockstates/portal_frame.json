@@ -1,0 +1,29 @@
+{
+  "multipart": [
+    { "apply": { "model": "kubejs:block/portal_frame/frame" } },
+    {
+      "when": { "up": "true" }, 
+      "apply": { "model": "kubejs:block/portal_frame/up" }
+    },
+    {
+      "when": { "down": "true" }, 
+      "apply": { "model": "kubejs:block/portal_frame/down" }
+    },
+    {
+      "when": { "north": "true" }, 
+      "apply": { "model": "kubejs:block/portal_frame/north" }
+    },
+    {
+      "when": { "south": "true" }, 
+      "apply": { "model": "kubejs:block/portal_frame/south" }
+    },
+    {
+      "when": { "east": "true" }, 
+      "apply": { "model": "kubejs:block/portal_frame/east" }
+    },
+    {
+      "when": { "west": "true" }, 
+      "apply": { "model": "kubejs:block/portal_frame/west" }
+    }
+  ]
+}

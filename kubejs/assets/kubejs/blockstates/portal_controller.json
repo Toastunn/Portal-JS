@@ -1,0 +1,195 @@
+{
+  "multipart": [
+    {
+      "when": {"facing": "north"},
+      "apply": { "model": "kubejs:block/portal_controller/controller" }
+    },
+    {
+      "when": {"facing": "east"}, 
+      "apply": { "model": "kubejs:block/portal_controller/controller", "y": 90 }
+    },
+    {
+      "when": {"facing": "south"},
+      "apply": { "model": "kubejs:block/portal_controller/controller", "y": 180 }
+    },
+    {
+      "when": {"facing": "west"},
+      "apply": { "model": "kubejs:block/portal_controller/controller", "y": 270 }
+    },
+    {
+      "when": { "AND": [
+        {"up": "true" },
+        {"facing": "north"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/up" }
+    },
+    {
+      "when": { "AND": [
+        {"down": "true" },
+        {"facing": "north"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/down" }
+    },
+    {
+      "when": { "AND": [
+        {"north": "true" },
+        {"facing": "north"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/front" }
+    },
+    {
+      "when": { "AND": [
+        {"south": "true" },
+        {"facing": "north"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/back" }
+    },
+    {
+      "when": { "AND": [
+        {"east": "true" },
+        {"facing": "north"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/right" }
+    },
+    {
+      "when": { "AND": [
+        {"west": "true" },
+        {"facing": "north"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/left" }
+    },
+    {
+      "when": { "AND": [
+        {"up": "true" },
+        {"facing": "north"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/up" }
+    },
+    {
+      "when": { "AND": [
+        {"up": "true" },
+        {"facing": "west"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/up", "y": 270 }
+    },
+    {
+      "when": { "AND": [
+        {"down": "true" },
+        {"facing": "west"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/down", "y": 270 }
+    },
+    {
+      "when": { "AND": [
+        {"north": "true" },
+        {"facing": "west"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/right","y": 270 }
+    },
+    {
+      "when": { "AND": [
+        {"south": "true" },
+        {"facing": "west"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/left", "y": 270 }
+    },
+    {
+      "when": { "AND": [
+        {"east": "true" },
+        {"facing": "west"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/back", "y": 270 }
+    },
+    {
+      "when": { "AND": [
+        {"west": "true" },
+        {"facing": "west"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/front", "y": 270 }
+    },
+    {
+      "when": { "AND": [
+        {"up": "true" },
+        {"facing": "south"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/up", "y": 180 }
+    },
+    {
+      "when": { "AND": [
+        {"down": "true" },
+        {"facing": "south"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/down", "y": 180 }
+    },
+    {
+      "when": { "AND": [
+        {"north": "true" },
+        {"facing": "south"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/back", "y": 180 }
+    },
+    {
+      "when": { "AND": [
+        {"south": "true" },
+        {"facing": "south"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/front", "y": 180 }
+    },
+    {
+      "when": { "AND": [
+        {"east": "true" },
+        {"facing": "south"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/left", "y": 180 }
+    },
+    {
+      "when": { "AND": [
+        {"west": "true" },
+        {"facing": "south"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/right", "y": 180 }
+    },
+    {
+      "when": { "AND": [
+        {"up": "true" },
+        {"facing": "east"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/up", "y": 90 }
+    },
+    {
+      "when": { "AND": [
+        {"down": "true" },
+        {"facing": "east"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/down", "y": 90 }
+    },
+    {
+      "when": { "AND": [
+        {"north": "true" },
+        {"facing": "east"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/left", "y": 90 }
+    },
+    {
+      "when": { "AND": [
+        {"south": "true" },
+        {"facing": "east"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/right", "y": 90 }
+    },
+    {
+      "when": { "AND": [
+        {"east": "true" },
+        {"facing": "east"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/front", "y": 90 }
+    },
+    {
+      "when": { "AND": [
+        {"west": "true" },
+        {"facing": "east"}
+      ]}, 
+      "apply": { "model": "kubejs:block/portal_controller/back", "y": 90 }
+    }
+  ]
+}

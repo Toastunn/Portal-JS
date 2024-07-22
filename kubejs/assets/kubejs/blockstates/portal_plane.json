@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "kubejs:block/portal_plane", "x": 90, "y": 90 },
+    "axis=y": { "model": "kubejs:block/portal_plane" },
+    "axis=z": { "model": "kubejs:block/portal_plane", "x": 90 }
+  }
+}
