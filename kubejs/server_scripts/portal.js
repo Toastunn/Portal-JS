@@ -153,7 +153,7 @@ BlockEvents.rightClicked("kubejs:portal_controller", event => {
           } else {
             if(linkedBlock.entity.persistentData.isFormed) {
               scheduleInTicks(200, () => {
-              paintText(player, "[PORTAL] §b/INFO/§r:", `Portals are ready to go! Simply click either interface with an Antimatter Pellet to ingite it.`, true, 0)
+              paintText(player, "[PORTAL] §b/INFO/§r:", `Portals are ready to go! Simply click either interface with a Nether Star to ingite it.`, true, 0)
               })
               delay += 200
             } else {
@@ -178,7 +178,7 @@ BlockEvents.rightClicked("kubejs:portal_controller", event => {
       })
     } else
 
-    if(player.getItemInHand("main_hand") == "mekanism:pellet_antimatter" || player.getItemInHand("off_hand") == "mekanism:pellet_antimatter") {
+    if(player.getItemInHand("main_hand") == "minecraft:nether_star" || player.getItemInHand("off_hand") == "minecraft:nether_star") {
       let { entity: { persistentData: { hasEnergyToRun, isFormed } } } = block
       let linkedBlock = findOtherSide(block)
       if(hasEnergyToRun && isFormed && linkedBlock) {
@@ -192,9 +192,9 @@ BlockEvents.rightClicked("kubejs:portal_controller", event => {
           if(!linked || !all) return
           paintText(player, "[PORTAL] §b/INFO/§r:", `Portals are active!`, true, 0)
           scheduleInTicks(80, () => {
-          paintText(player, "[PORTAL] §b/INFO/§r:", `To change the destination of a portal within the linked portal, simply click a point of the linked portal with a Plutonium Pellet.`, true, 0)
+          paintText(player, "[PORTAL] §b/INFO/§r:", `To change the destination of a portal within the linked portal, simply click a point of the linked portal with an Ender Pearl.`, true, 0)
           scheduleInTicks(200, () => {
-          paintText(player, "[PORTAL] §b/INFO/§r:", `If you would like to get information about a portal, simply click the interface with a Network Reader.`, true, 0)
+          paintText(player, "[PORTAL] §b/INFO/§r:", `If you would like to get information about a portal, simply click the interface with a Spyglass.`, true, 0)
           scheduleInTicks(200, () => {
           clearConsole(player)
           })})})
@@ -202,7 +202,7 @@ BlockEvents.rightClicked("kubejs:portal_controller", event => {
       }
     } else
 
-    if(player.getItemInHand("main_hand") == "mekanism:network_reader" || player.getItemInHand("off_hand") == "mekanism:network_reader") {
+    if(player.getItemInHand("main_hand") == "minecraft:spyglass" || player.getItemInHand("off_hand") == "minecraft:spyglass") {
       let { energyCost, destination } = entity.persistentData
       let linkedBlock = findOtherSide(block)
       player.tell(Text.aqua("-------------[PORTAL]-------------\n").append(
@@ -244,7 +244,7 @@ BlockEvents.rightClicked("kubejs:portal_controller", event => {
 
 BlockEvents.rightClicked("kubejs:portal_plane", event => {
   const { block, block: { level, entity: { persistentData: { controller } } }, player, player: { persistentData: { portalMute: { linked, all } } } } = event
-  if(player.getItemInHand("main_hand") == "mekanism:pellet_plutonium") {
+  if(player.getItemInHand("main_hand") == "minecraft:ender_pearl") {
     let controllerBlock = level.getBlock(controller.x, controller.y, controller.z)
     let linkedBlock = findOtherSide(controllerBlock)
     if(linkedBlock) {
