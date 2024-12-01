@@ -4,6 +4,7 @@
 A KubeJS powered custom portal that I spent around two whole weeks making.
 
 Almost everthing that is in here will work out of the box*, just follow the license if you intend on using it.
+It also requires Fusion (ctm) for the textures to work.
 
 This script originates from my modpack ToasTech available on CurseForge. It's bad, don't play it.
 #
