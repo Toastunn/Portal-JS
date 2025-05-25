@@ -10,4 +10,3 @@ This script originates from my modpack ToasTech available on CurseForge. It's ba
 #
 
 *When making a recipe for the wormhole item or `/give`ing it to yourself, give it an NBT with the key `"temp"`. ex: `{temp: "something really stupid"}`. This will make it usable for the portals.
-*The current recipes use Mekanism items so please modify them.
